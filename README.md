@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Expense Tracking App Documentation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
 
-## Available Scripts
+The Expense Tracking App is a web application developed using React JS that helps users track their expenses by adding income and expense transactions. The app provides a user-friendly interface where users can add, view, and filter their transactions, allowing them to monitor their financial activities effectively.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Add Income and Expense Transactions: Users can add income and expense transactions with details like the amount and description.
+- Transaction List: The app displays a list of all transactions with their descriptions and amounts.
+- Filtering Transactions: Users can search for specific transactions using the search bar to filter the transaction list.
+- Real-time Balance: The app automatically calculates and updates the balance based on the income and expense transactions.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Getting Started
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the GitHub repository for the Expense Tracking App.
+2. Install the required dependencies using `npm install`.
+3. Start the development server using `npm start`.
+4. Open the app in your browser at `http://localhost:3000/`.
 
-### `npm test`
+## Usage
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Add a Transaction**: To add a new transaction, click on the "Add Transaction" button at the top of the page. A form will appear where you can enter the amount, description, and type (income or expense) of the transaction. Click "Add Transaction" to save it.
 
-### `npm run build`
+2. **View Transactions**: All your transactions will be listed below the form. Each transaction will show its description and amount. The transactions are automatically sorted with the most recent transaction on top.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Filter Transactions**: Use the search bar to filter transactions based on their descriptions. As you type in the search bar, the list of transactions will dynamically update to show only the matching ones.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. **Balance**: The total balance is displayed at the top of the page, showing the difference between your total income and total expenses.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Credits
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The initial idea and implementation for this Expense Tracking App were inspired by the YouTube tutorial by TheIndianDev: "Build An Expense Tracker App using React JS | ReactJS Project for Beginners" (https://www.youtube.com/watch?v=q1CjHlojkVk&ab_channel=TheIndianDev).
