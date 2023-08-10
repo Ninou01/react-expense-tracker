@@ -125,19 +125,40 @@ header .balance-box {
 }
 
 .transaction {
-  border: 1px solid #b8babb;
-  margin: 5px 0;
-  border-radius: 3px;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
+  position: relative;
+  
+  .delete {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #ea2121;
+    color: #fff;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    left: -21px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  & div {
+    border: 1px solid #b8babb;
+    margin: 5px 0;
+    border-radius: 3px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
-.transaction.income {
+.transaction.income div {
   border-right: 4px solid green;
 }
 
-.transaction.expense {
+.transaction.expense div {
   border-right: 4px solid red;
 }
 

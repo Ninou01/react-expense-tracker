@@ -44,13 +44,18 @@ const App = () => {
         setExpense(expense + newTransaction.amount)
       }
     }
+
+    const onDelete = (id) => {
+      const updatedTransactions = transactions.filter(transaction => transaction.id !== id)
+      setTransactions(updatedTransactions)
+    }
   
   return (
     <div className="App container">
       <Header balance={balance} showAdd={showAdd} handleShowAdd={(e) => setShowAdd(!showAdd)}/>
       {showAdd && <AddTransaction onAdd={onAdd}/>}
       <Wallet income={income} expense={expense}/>
-      <Transactions transactions={filtredTransactions} queryHandler={(e) => setQuery(e.target.value)}/>
+      <Transactions transactions={filtredTransactions} onDelete={onDelete} queryHandler={(e) => setQuery(e.target.value)}/>
     </div>
   );
 }
