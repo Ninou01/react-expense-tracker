@@ -7,8 +7,6 @@ import AddTransaction from "./components/AddTransaction";
 
 const App = () => {
   const { transactions } = useContext(TransactionsContext)
-
-  const { toLowerCase } = useContext(TransactionsContext)
   const [showAdd, setShowAdd] = useState(false)
   const [query, setQuery] = useState("")
 
