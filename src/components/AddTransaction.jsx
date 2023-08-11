@@ -1,6 +1,8 @@
-import { useState } from "react"
+import { useState, useContext } from "react"
+import { TransactionsContext } from "../context/TransactionContext"
 
-const AddTransaction = ({ onAdd }) => {
+const AddTransaction = () => {
+    const { addTransaction } = useContext(TransactionsContext)
     const [amount, setAmount] = useState("")
     const [description, setDescription] = useState("")
     const [type, setType] = useState("expense")
@@ -8,13 +10,12 @@ const AddTransaction = ({ onAdd }) => {
     const onSubmit = (e) => {
         e.preventDefault()
         const newTransaction = {
-            "id": new Date().valueOf(),
             "description": description,
             "amount": +amount,
             "type": type
         }
 
-        onAdd(newTransaction)
+        addTransaction(newTransaction)
         setAmount("")
         setDescription("")
         setType("expense")

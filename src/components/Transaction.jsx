@@ -1,10 +1,13 @@
+import { useContext } from "react";
+import { TransactionsContext } from "../context/TransactionContext";
 
+const Transaction = ({ transaction }) => {
+    const { deleteTransaction } = useContext(TransactionsContext)
 
-const Transaction = ({ transaction, onDelete }) => {
     return (
         <li className={`transaction ${transaction.type}`}>
             <span className="delete"
-            onClick={() => onDelete(transaction.id)}>x</span>
+            onClick={() => deleteTransaction(transaction.id)}>x</span>
             <div>
                 <span className="description">{transaction.description}</span>
                 <span className="amount">{transaction.amount}$</span>

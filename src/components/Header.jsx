@@ -1,4 +1,15 @@
-const Header = ({ balance, showAdd, handleShowAdd }) => {
+import { TransactionsContext } from "../context/TransactionContext"
+import { useContext } from "react"
+
+const Header = ({ showAdd, handleShowAdd }) => {
+    const { transactions } = useContext(TransactionsContext)
+
+    const balance = transactions.reduce((acc, transaction) => {
+      return transaction.type === "income"
+        ? acc + transaction.amount
+        : acc - transaction.amount;
+    }, 0);
+
     return (
     <header>
         <div className="title">
