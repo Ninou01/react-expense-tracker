@@ -2,7 +2,13 @@
 
 ## Introduction
 
-The Expense Tracking App is a web application developed using React JS that helps users track their expenses by adding income and expense transactions. The app provides a user-friendly interface where users can add, view, and filter their transactions, allowing them to monitor their financial activities effectively.
+The Expense Tracking App is a web application developed using React JS that helps users track their expenses by adding income and expense transactions. With a user-friendly interface and improved data management using useReducer and reactContext, this app offers a seamless way to manage your financial transactions.
+
+![Expense Tracker App Screenshot](./Expense%20Tracker%20App%20Screenshot.jpg)
+
+## Demo
+
+A live demo of the Expense Tracking App is available at: [Expense Tracking App Demo](https://ninou01.github.io/react-expense-tracker/)
 
 ## Features
 
