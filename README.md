@@ -36,4 +36,4 @@ A live demo of the Expense Tracking App is available at: [Expense Tracking App D
 
 ## Credits
 
-The initial idea and implementation for this Expense Tracking App were inspired by the YouTube tutorial by TheIndianDev: "Build An Expense Tracker App using React JS | ReactJS Project for Beginners" (https://www.youtube.com/watch?v=q1CjHlojkVk&ab_channel=TheIndianDev).
+The initial idea and implementation for this Expense Tracking App were inspired by the YouTube tutorial by TheIndianDev: [Build An Expense Tracker App using React JS | ReactJS Project for Beginners](https://www.youtube.com/watch?v=q1CjHlojkVk&ab_channel=TheIndianDev).
